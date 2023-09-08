@@ -12,7 +12,7 @@ displayCurrentDayOfTheWeek();
 
 const displayCurrentUTCTime = () => {
     const timeDisplay = document.getElementById('time-display');
-    const currentTime = new Date().toUTCString();
+    const currentTime = new Date().getTime();
     timeDisplay.textContent = `Current UTC Time: ${currentTime}`;
 }
 
